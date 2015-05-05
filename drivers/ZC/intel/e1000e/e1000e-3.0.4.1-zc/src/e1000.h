@@ -32,7 +32,7 @@
 #include <linux/if_vlan.h>
 #include "kcompat.h"
 #ifdef HAVE_HW_TIME_STAMP
-#include <linux/clocksource.h>
+#include <linux/timecounter.h>
 #include <linux/net_tstamp.h>
 #endif
 #ifdef HAVE_PTP_1588_CLOCK
