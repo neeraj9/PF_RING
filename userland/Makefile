@@ -6,13 +6,13 @@ libpfring:
 	cd lib; ./configure; make
 
 pcap:
-	cd libpcap; ./configure --enable-ipv6 --enable-dbus=no; make
+	cd libpcap; ./configure --enable-ipv6 --enable-dbus=no --disable-bluetooth; make
 
 ring_examples:
 	cd examples; make
 
 libzero_examples:
-	cd examples_libzero; make
+	cd examples_libzero; ./configure; make
 
 zc_examples:
 	cd examples_zc; make
